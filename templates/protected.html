@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+        This is protected page .<br>
+        Email : {{session['email']}} <br>
+        Name : {{session['name']}} <br>
+        <a href={{url_for('logout')}}><button>Logout</button></a>
+
+{% endblock content %}
